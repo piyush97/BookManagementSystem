@@ -24,7 +24,7 @@
     <tbody>
       <tr v-for="book in books">
         <td>
-          {{book.title}}
+         <a v-bind:href="book.url"> {{book.title}}</a>
         </td>
         <td>
           {{book.author}}
@@ -34,6 +34,8 @@
    </table>
    </div>
   </div>
+</div>
+
 </template>
 
 <script>
@@ -50,13 +52,13 @@ let config={
 let app=Firebase.initializeApp(config);
 let db=app.database();
 
-let bookRef=db.ref('books');
+let booksRef=db.ref('books');
 
 
 export default {
   name: 'App',
   firebase:{
-  books: booRef
+  books: booksRef
   }
 }
 </script>
