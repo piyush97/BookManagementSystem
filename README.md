@@ -18,4 +18,12 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Tech Used:
+
+1. Firebase (Realtime Database which stores the Name and Author of the book along with URL)
+2. VueJs (Vue.js is an open-source JavaScript framework for building user interfaces. Integration into projects that use other JavaScript libraries is made easy with Vue because it is designed to be incrementally adoptable.)
+3. Bootstrap 4
+4. Jquery
+
+
+### All rights reserved: Piyush Mehta
