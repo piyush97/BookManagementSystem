@@ -1,6 +1,38 @@
 <template>
   <div id="app" class="container">
-   
+   <div class="page-header">
+   <h1> Book Management system made in Vue.JS and Firebase</h1>
+
+   </div>
+   <div class="panel panel-default">
+   <div class="panel-heading">
+   <h3> Books Lists</h3>
+
+   </div>
+   <div class="panel-body">
+   <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>
+          Title
+        </th>
+        <th>
+          Author
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="book in books">
+        <td>
+          {{book.title}}
+        </td>
+        <td>
+          {{book.author}}
+        </td>
+      </tr>
+    </tbody>
+   </table>
+   </div>
   </div>
 </template>
 
