@@ -1,4 +1,4 @@
-# bookmanagement
+# Book Management System
 
 > firebase and vue.js project
 
